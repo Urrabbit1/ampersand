@@ -1,0 +1,137 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #060C0D;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 430px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .circle {
+            width: 153px;
+            height: 153px;
+            background-color: #0A1417;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        
+        .title {
+            color: #AED4B3;
+            font-size: 26px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .input-container {
+            position: relative;
+            width: 300px;
+            height: 50px;
+            background-color: #0A1417;
+            border-radius: 16px;
+            margin-bottom: 20px;
+        }
+        
+        .input-container input {
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            border: none;
+            padding: 0 20px;
+            color: #AED4B3;
+            font-size: 24px;
+            outline: none;
+        }
+        
+        .input-container label {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            color: #AED4B3;
+            font-size: 24px;
+            pointer-events: none;
+            transition: all 0.3s ease;
+        }
+
+        .input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+    opacity: 0;
+    visibility: hidden;
+}
+        
+        .submit-btn {
+            width: 79px;
+            height: 20px;
+            background-color: transparent;
+            color: #AED4B3;
+            border: none;
+            border-radius: 4px;
+            font-size: 24px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+    text-decoration: none;
+        }
+        
+        .submit-btn:hover {
+            background-color: transparent;
+    transform: none;
+    box-shadow: none;
+    text-decoration: underline;
+
+        }
+        
+        .registration-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .registration-text {
+            color: #AED4B3;
+            font-size: 24px;
+            white-space: nowrap;
+        }
+        
+        .registration-btn {
+            width: 145px;
+            height: 38px;
+            background-color: transparent;
+            color: #AED4B3;
+            border: none;
+            border-radius: 4px;
+            font-size: 24px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            white-space: nowrap;
+            text-decoration: none;
+        }
+        
+       .registration-btn:hover {
+            background-color: transparent;
+    transform: none;
+    box-shadow: none;
+    text-decoration: underline;
+        }
